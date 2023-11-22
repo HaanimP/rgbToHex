@@ -1,0 +1,40 @@
+body{
+    text-align: center;
+    margin: 20px;
+    background: #ff6961;
+}
+
+.rgb{
+    background: #FFA7A0;
+    color: white;
+    margin-top: 250px;
+}
+
+#rth{
+    color: #ff6961;
+}
+
+
+#red{
+    background: #F8C8DC;
+    color: #000;
+}
+
+#green{
+    background: #F8C8DC;
+    color: #000;
+}
+
+#blue{
+    background: #F8C8DC;
+    color: #000;
+}
+
+#convertButton{
+    background: #F8C8DC; 
+}
+
+#result{
+    font-size: 20px;
+    margin-top: 20px;
+}
