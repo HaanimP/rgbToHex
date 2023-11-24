@@ -33,13 +33,19 @@ function convertRGBtoHex() {
 
 // Function to convert RGB to Hex
 function convertRGBtoHexColor(red, green, blue) {
-    // Convert each RGB component to Hex and concatenate them
-    let hexRed = red.toString(16).padStart(2, '0');
-    let hexGreen = green.toString(16).padStart(2, '0');
-    let hexBlue = blue.toString(16).padStart(2, '0');
+    // Convert each RGB component to Hex without using padStart
+    let hexRed = red.toString(16);
+    let hexGreen = green.toString(16);
+    let hexBlue = blue.toString(16);
+
+    // Ensure each component has two digits
+    if (hexRed.length === 1) hexRed = '0' + hexRed;
+    if (hexGreen.length === 1) hexGreen = '0' + hexGreen;
+    if (hexBlue.length === 1) hexBlue = '0' + hexBlue;
 
     return `#${hexRed}${hexGreen}${hexBlue}`;
 }
+
 
 // Function to display the result in the DOM
 function displayResult(hexColor) {
